@@ -1,0 +1,16 @@
+{% extends 'web/base.html' %}
+
+{% block titel %}FSV - Registrieren{% endblock %}
+
+{% block mainForm %}
+
+    <h1>Registrieren</h1>
+    <p>Dieser Bereich ist nur für Befugte</p>
+
+    <form method="post" action="">
+        {% csrf_token %}
+        {{ register_form.as_p }}
+        <button id="button" type="submit">Erstellen</button>
+    </form>
+
+{% endblock %}

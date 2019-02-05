@@ -1,0 +1,14 @@
+h3{
+	text-align: right;
+	color: grey;
+}
+h2{
+	margin-top: 15px;
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+#main p{
+	text-align: justify;
+	margin-bottom: 10px;
+}

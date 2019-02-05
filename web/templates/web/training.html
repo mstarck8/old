@@ -1,0 +1,75 @@
+{% extends 'web/base.html' %}
+{% load static %}
+
+{% block title%} FSV - Training {% endblock %}
+{% block style%} <link rel="stylesheet" href="{% static 'Style/trainingszeiten.css' %}"> {% endblock %}
+
+
+{% block mainForm %}
+
+    <div id="main">
+    	<h1>Trainingszeiten</h1>
+		<p><h3>Stand 20.01.2018</h3></p>
+		<p><h3>In der Hallenbadsaison 2017/2018 sind die Trainingszeiten wie folgt:</h3></p>
+		<table>
+			<tr>
+				<th>Uhrzeit</th>
+				<th>Montag</th>
+				<th>Dienstag</th>
+				<th>Mittwoch</th>
+				<th>Donnerstag</th>
+				<th>Freitag</th>
+			</tr>
+			<tr>
+				<td id="time">13:00-14:45</td>
+				<td>---------</td>
+				<td>Schwimmanfänger</td>
+				<td>---------</td>
+				<td>---------</td>
+				<td>Schwimmanfänger</td>
+			</tr>
+			<tr>
+				<td id="time">15:00-16:30</td>
+				<td>---------</td>
+				<td>---------</td>
+				<td>---------</td>
+				<td>---------</td>
+				<td>L1-L3</td>
+			</tr>
+			<tr>
+				<td id="time">17:00-18:00</td>
+				<td>Nachwuchsgruppen L2/L3</td>
+				<td>---------</td>
+				<td>L2/L3</td>
+				<td>L1-L3 <p>in Battenberg</p></td>
+				<td>---------</td>
+			</tr>
+			<tr>
+				<td id="time">18:00-19:00</td>
+				<td>L1-L3 + Schwimmanfänger</td>
+				<td>---------</td>
+				<td>L1-L3</td>
+				<td>L1-L3 <p>in Battenberg</p></td>
+				<td>---------</td>
+			</tr>
+			<tr>
+				<td id="time">19:00-20:00</td>
+				<td>L1</td>
+				<td>---------</td>
+				<td>L1-L3</td>
+				<td>---------</td>
+				<td>---------</td>
+	        </tr>
+				<td id="time">20:00-21:00</td>
+				<td>Erwachsene/Triathlon</td>
+				<td>---------</td>
+				<td>Erwachsene/Triathlon</td>
+				<td>---------</td>
+				<td>---------</td>
+			</tr>
+		</table>
+		<p id="p1">Die Uhrzeiten sind reine Trainingszeiten. Bitte immer 10 Minuten vorher da sein!<p>
+		<p id="pEnde">Zusätzlich findet an wettkampffreien Samstagen Training von 12:30 - 14:30 Uhr in Battenberg statt.</p>
+	</div>
+
+{% endblock %}

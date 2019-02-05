@@ -1,0 +1,36 @@
+#artikel {
+  width: 100%;
+  margin-top: 50px;
+  border-bottom: 3px solid #999999;
+  float: left;
+}
+
+#artikel p{
+	margin-top: 5px;
+    font-size: 1.3em;
+    text-align: justify;
+    word-wrap: break-word;
+}
+
+#datum{
+	font-size: 1.4em;
+	float: left;
+	height: 100px;
+    margin-right: 10%;
+    color: grey;
+}
+
+#inhalt{
+  max-height: 15vh;
+  overflow: hidden;
+  margin-left: 20px;
+}
+
+#artikel a{
+  margin-top: .5%;
+  color: red;
+  text-align: right;
+  font-size: 1.2em;
+  text-decoration: none;
+  float: right;
+}

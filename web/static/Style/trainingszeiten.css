@@ -1,0 +1,39 @@
+#main{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+table{
+	margin-bottom: 30px;
+	border-collapse: collapse;
+	font-family: Tahoma, Arial;
+}
+
+td, th{
+	border: 1px solid black;
+	text-align: center;
+	
+}
+
+#time, th{
+	background-color: black;
+	color: white;
+}
+
+td{
+	padding-left: 3px;
+	padding-right: 3px;
+	font-size: 1.1em;
+}
+
+th{
+	height: 30px;
+}
+
+td p{
+	background-color: red;
+}
+
+#p1{
+	color: red;
+}

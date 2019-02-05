@@ -1,0 +1,83 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title%} Frankenberger Schwimmverein{% endblock %}</title>
+
+    <link rel="stylesheet" href="{% static 'Style/style.css' %}">
+	{% block style %} <link rel="stylesheet" href="{% static 'Style/home.css' %}"> {% endblock %}
+</head>
+
+    <body>
+			<div id="container">
+				<header>
+				</header>
+				<nav>
+					<ul>
+						<li><a href="{% url 'web:index' %}">Home</a></li>
+						<li><a href="{% url 'web:training' %}">Training</a></li>
+						<li><a href="kontakt.html">Kontakt</a></li>
+						<li><a href="{% url 'news:index' %}">Artikel</a></li>
+						<li><a href="termine.html">Termine</a></li>
+					</ul>
+				</nav>
+
+				{% block mainForm %}
+
+				 <div id="main">
+					<div id="top">
+					</div>
+					<div class="fling-minislide">
+						<img src="{% static 'Style/orang.png' %}" alt="Slide 4" />
+						<img src="{% static 'Style/grün.png' %}"  alt="Slide 3" />
+						<img src="{% static 'Style/pink.png' %}" alt="Slide 2" />
+						<img src="{% static 'Style/blau.png' %}"  alt="Slide 1" />
+					</div>
+
+					<div id="content">
+						<h1>News</h1>
+
+
+					</div>
+				</div>
+
+
+					<div id="rechts">
+						<div id="wettkämpfe">
+							<h3>Wettkämpfe</h3>
+							<p id="p1">26.01.2019</p>
+							<p id="p2">1. Wintermeeting - Eibel</p>
+							<p id="p1">10.02.2019</p>
+							<p id="p2">DMS - Frankenberg</p>
+						</div>
+
+						<div id="aktuelles1">
+							<div id="bild">
+								<img src="{% static 'Style/logo.png' %}"  height="30px">
+							</div>
+							<a href="maischwimmen.html">Maischwimmen</a>
+						</div>
+						<div id="aktuelles2">
+							<div id="bild">
+								<img src="{% static 'Style/logo.png' %}" height="30px">
+							</div>
+							<a href="trainingslager.html">Trainingslager</a>
+						</div>
+					</div>
+				</div>
+
+				{% endblock %}
+
+			</div>
+			<footer id="footer">
+                <p><a href="impressum.html">Impressum</a></p>
+				{% if request.user.is_authenticated %}
+				<p><a href="{% url 'web:logout' %}">Logout</a></p>
+				{% else %}
+				<p><a href="{% url 'web:login' %}">Login</a></p>
+				<p><a href="{% url 'web:register' %}">Registrieren</a></p>
+				{% endif %}
+            </footer>
+		</body>
+</html>
